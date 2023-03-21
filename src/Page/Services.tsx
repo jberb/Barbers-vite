@@ -2,10 +2,12 @@ import React from "react";
 import S1 from "../img/a1.png";
 import S2 from "../img/b7.png";
 import S3 from "../img/b9.png";
+import Button from "../components/Button";
+import Topname from "../components/Topname";
+
 
 function Services() {
-  const buttonStyle =
-    "bg-gray-400 hover:bg-yellow-500 text-white font-bold rounded-full border-3 border-white w-40 h-11 ";
+ 
   const borderStyle =
     " m-10  flex  flex-col  items-center rounded-lg py-5  hover:shadow-2xl w-60";
   const textStyle = "text-black-500 font-poppins font-bold py-5 uppercase ";
@@ -16,11 +18,8 @@ function Services() {
       id="service"
       className="flex flex-col text-center bg-gray-100 justify-center items-center py-12 "
     >
-      <h1 className="py-2 text-gray-700 font-crimson">NOTHING BUT THE BEST</h1>
-      <h1 className="py-2 text-yellow-500 font-bold text-4xl font-crimson">
-        OUR SERVICES
-      </h1>
-      <div className=" flex flex-col gap-10 sm:flex-row py-5">
+      <Topname title1="Nothing But the best" title2="our services"/>
+      <div className=" flex flex-col gap-10 sm:flex-row py-1">
         <div className={borderStyle}>
           <img className=" h-56" src={S1}></img>
           <h1 className={textStyle}>Classic Cut</h1>
@@ -29,9 +28,7 @@ function Services() {
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae.
           </p>
-          <button type="button" className={buttonStyle}>
-            Read More
-          </button>
+          <Button/>
         </div>
         <div className={borderStyle}>
           <img className="h-56" src={S2}></img>
@@ -41,9 +38,7 @@ function Services() {
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae.
           </p>
-          <button type="button" className={buttonStyle}>
-            Read More
-          </button>
+          <Button/>
         </div>
         <div className={borderStyle}>
           <img className="h-56" src={S3}></img>
@@ -53,9 +48,7 @@ function Services() {
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae.
           </p>
-          <button type="button" className={buttonStyle}>
-            Read More
-          </button>
+          <Button/>
         </div>
       </div>
     </div>

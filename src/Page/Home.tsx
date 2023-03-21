@@ -3,10 +3,10 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import Burger from "../svg/Burger";
 import Email1 from "../svg/Email1";
 import Phone1 from "../svg/Phone1";
+import Button2 from "../components/Button2";
 
 function Home() {
-  const buttonStyle =
-    "uppercase bg-transparent hover:bg-yellow-500 text-white font-bold border-2 border-white py-2 px-4 rounded-full w-40 h-25 font-poppins";
+  
   const textStyle = "font-poppins hover:text-yellow-500 text-sm uppercase";
   return (
     <div
@@ -24,7 +24,7 @@ function Home() {
           </div>
           <div className="flex">
             <Phone1 width="13" heigth="13"/>
-            <a className="text-white text-xs pr-20" href="tel:+046123467">
+            <a className="text-white text-xs sm:pr-20" href="tel:+046123467">
               {" "}
               (046) 123 - 4567
             </a>
@@ -85,14 +85,10 @@ function Home() {
           </div>
           <div className="flex flex-col sm:flex-row gap-2 py-5">
             <div className="pb-5">
-              <button  type="button" className={buttonStyle}>
-                Learn More
-              </button>
+              <Button2 button1="Learn More"/>
             </div>
             <div>
-              <button type="button" className={buttonStyle}>
-                Contact Us
-              </button>
+              <Button2 button1="Contact Us"/>
             </div>
           </div>
         </div>
