@@ -19,14 +19,15 @@ function App() {
   return (
     <div className="App">
   <Home/>
-  <About />
+  <About/>
   <Services/>
-     <Testimonials/>
-     <Team/>
-     <Discount/>
-     <Contact/>
-<Map/>
-     <Footer/>
+  <Testimonials/>
+ <Team/>
+ <Discount/>
+ <Contact/>
+ <Footer/>
+    
+ 
     
  
 

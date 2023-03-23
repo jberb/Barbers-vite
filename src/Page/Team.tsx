@@ -7,28 +7,20 @@ import Topname from "../components/Topname";
 
 function Team() {
   
+  
   return (
-    <div id="team" className="bg-white-300 flex flex-col text-center items-center  py-7 
+    <div id="team" className="bg-white-300 flex flex-col text-center items-center  py-5 
      ">
       
       <Topname title1="professional" title2="our team"/>
-      <div className="flex flex-col gap-10 sm:flex-row py-5 ">
-        <Cardcomp
-        imageurl={T1}
-        title1="Paul Narch"
-        body="Barber"
-        />
-        <Cardcomp
-        imageurl={T2}
-        title1="Steven Joseph"
-        body="Barber"/>
-        <Cardcomp
-        imageurl={T3}
-        title1="Alexander Darvid"
-        body="Shaver"/>
-        
-       
-      </div>
+      <Cardcomp
+     states={[
+      {id: 1, imageurl: T1, name:"Paul Narch", title1:"Barber", isActive:false},
+      {id: 2, imageurl: T2, name:"Steven Joseph", title1:"Barber", isActive:false},
+      {id: 3, imageurl: T3, name:"Alexander David", title1:"Shaver", isActive:false},
+     ]}
+
+     />
     </div>
   );
 }
