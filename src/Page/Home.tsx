@@ -39,7 +39,7 @@ function Home() {
             <Burger width="28" height="28"/>
             <ul className="text-white  justify-between hidden  font-crimson sm:flex gap-5 px-20">
               <li>
-                <AnchorLink href="#home" className={textStyle}>
+                <AnchorLink href="#home" className="textStyle2">
                   Home
                 </AnchorLink>
               </li>

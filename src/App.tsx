@@ -18,7 +18,8 @@ function App() {
 
   return (
     <div className="App">
-  <Home/>
+
+<Home/>
   <About/>
   <Services/>
   <Testimonials/>

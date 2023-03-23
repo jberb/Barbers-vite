@@ -6,7 +6,7 @@ import Linkin from './../svg/Linkin';
 
 
 function Footer() {
-  const textStyle = "font-poppins hover:text-yellow-500";
+ 
   return (
     <div className="bg-black py-10">
       <div className="">
@@ -16,32 +16,32 @@ function Footer() {
         <nav className="text-white font-poppins  hidden sm:flex justify-center   ">
           <ul className="flex gap-5">
             <li>
-              <AnchorLink href="#home" className={textStyle}>
+              <AnchorLink href="#home" className="textStyle2">
                 Home
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#about" className={textStyle}>
+              <AnchorLink href="#about" className="textStyle2">
                 About Us
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#service" className={textStyle}>
+              <AnchorLink href="#service" className="textStyle2">
                 Services
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#testimonials" className={textStyle}>
+              <AnchorLink href="#testimonials" className="textStyle2">
                 Testimonials
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#team" className={textStyle}>
+              <AnchorLink href="#team" className="textStyle2">
                 Our Team
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#contact" className={textStyle}>
+              <AnchorLink href="#contact" className="textStyle2">
                 Contact Us
               </AnchorLink>
             </li>

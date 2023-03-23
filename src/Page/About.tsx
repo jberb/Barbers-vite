@@ -1,5 +1,6 @@
 import React from "react";
 import B2 from "../img/b8.jpg";
+import Topname from "../components/Topname";
 
 function About() {
   return (
@@ -8,10 +9,8 @@ function About() {
       className="pt-10  p-10 flex flex-col sm:items-center sm:flex-row sm:gap-10 sm:px-40 sm:p-14"
     >
       <div className="sm:w-1/2 p-11">
-        <h1 className=" py-1 text-neutral-600 font-crimson">UNIQUE STORY</h1>
-        <h2 className=" text-yellow-400 font-bold text-3xl uppercase py-2 font-crimson">
-          50 Years of Experience
-        </h2>
+       
+        <Topname title1="UNIQUE STORY" title2="50 Years of Experience"/>
 
         <p className="py-5 font-crimson">
           Lorem ipsum dolorsit amet, consectetur adipisicing elit, sed do
@@ -34,7 +33,7 @@ function About() {
           Read More
         </button>
       </div>
-      <img className="py-10 sm:p-10 sm:w-600 sm:h-96 justify-center" src={B2}></img>
+      <img className="py-10 sm:p-10 sm:w-1/2 sm:h-96 justify-center" src={B2}></img>
     </div>
   );
 }
